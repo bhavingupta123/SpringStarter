@@ -13,5 +13,10 @@
     <bean id="myCoach" class="com.bhavin.demo.com.bhavin.demo.TrackCoach">
     	<constructor-arg ref="myFortune"/>
     </bean>
+    
+    <bean id="mycricketcoach" class="com.bhavin.demo.com.bhavin.demo.CricketCoach" >
+    
+    	<property name="Myfortune" ref="myFortune" />
+    </bean>
   
 </beans>
