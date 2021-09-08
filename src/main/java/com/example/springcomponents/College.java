@@ -4,4 +4,8 @@ import org.springframework.stereotype.Component;
 
 @Component("ref1")
 public class College {
+
+    public void  test(){
+        System.out.println("testing ");
+    }
 }

@@ -9,8 +9,8 @@ public class Client {
     public static void main(String[] args) {
 
         ApplicationContext context = new AnnotationConfigApplicationContext(CollegeConfig.class);
-        College obj = (College)context.getBean("ref1");
-
+        College obj = (College)context.getBean("collegeBean");
+        obj.test();
         System.out.println(obj);
     }
 }
