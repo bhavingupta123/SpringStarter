@@ -9,7 +9,7 @@ public class Client {
     public static void main(String[] args) {
 
         ApplicationContext context = new AnnotationConfigApplicationContext(CollegeConfig.class);
-        College obj = (College)context.getBean("collegeBean");
+        College obj = (College)context.getBean("college");
         obj.test();
         System.out.println(obj);
     }
