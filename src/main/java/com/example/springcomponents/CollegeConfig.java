@@ -10,6 +10,12 @@ import org.springframework.context.annotation.Configuration;
 public class CollegeConfig {
 
     @Bean
+    public Teacher mathteacher(){
+
+        return new MathTeacher();
+    }
+
+    @Bean
     public Principal principal(){
         return new Principal();
     }
@@ -18,6 +24,7 @@ public class CollegeConfig {
     public College college(){
         College obj = new College();
         obj.setPrincipal(principal());
+        obj.setTeacher(mathteacher());
         return obj;
     }
 }
