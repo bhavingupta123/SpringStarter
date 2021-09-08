@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 
 public class CollegeConfig {
 
-    @Bean
+    /*@Bean
     public Teacher mathteacher(){
 
         return new MathTeacher();
@@ -26,5 +26,5 @@ public class CollegeConfig {
         obj.setPrincipal(principal());
         obj.setTeacher(mathteacher());
         return obj;
-    }
+    }*/
 }
